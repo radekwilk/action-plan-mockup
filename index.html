@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actin plan management</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <main class="main-container">
+        <h1 class="h1-heading heading"> Action plan management</h1>
+        <div class="audit-view">
+            <input class="radio-btn" type="radio" name="audit-view" value="rgm" checked id="rgm-btn"><span class="radio-label">RGM view</span>
+            <input class="radio-btn" type="radio" name="audit-view" value="asl" id="asl-btn"><span class="radio-label">ASL view</span>
+        </div>
+
+        <section class="section smart-section">
+            <h2 class="h2-heading heading">Make your actions 
+                <span class="s-pink smart">S</span>
+                <span class="m-yellow smart">M</span>
+                <span class="a-green smart">A</span>
+                <span class="r-blue smart">R</span>
+                <span class="t-purple smart">T</span>
+            </h2>
+
+            <div class="smart-blocks-container">
+                 <!-- S -->
+            <div class="arrow-container pink-border" id="card-1">
+                <div class="arrow arrow-pink">S</div>
+                <i class='bx bx-target-lock'></i>
+                <h5 class="h5-heading">specific</h5>
+                <p class="smart-text">
+                    Clearly define the goal with the precise details
+                </p>
+                <i class='bx bx-help-circle turn-btn font-pink' id="card-btn-1"></i>
+
+                  <!-- SMART - back of the card -->
+                    <div class="arrow-container arrow-back pink-border bg-pink-card" id="back-card-1">
+                        <h5 class="h5-heading back-card">specific</h5>
+                        <p class="smart-text">
+                            Clearly define the goal with the precise details. A specific goal eliminates ambiguity and answers the question: 
+                        </p>
+                        <ul class="list-of-examples">
+                            <li class="list-item"><span class="bold-text">What </span>exactly do I want to achieve? </li>
+                            <li class="list-item"><span class="bold-text">Who </span>is involved in this goal?</li>
+                            <li class="list-item"><span class="bold-text">Where </span>will this happen?</li>
+                            <li class="list-item"><span class="bold-text">Why </span>is this goal important?</li>
+                        </ul>
+                        <div class="close-btn" id="close-btn-1">X</div>
+                    </div>
+            </div>
+          
+
+             <!-- M -->
+             <div class="arrow-container yellow-border" id="card-2">
+                <div class="arrow arrow-yellow">M</div>
+                <i class='bx bx-radar'></i>
+                <h5 class="h5-heading">measurable</h5>
+                <p class="smart-text">
+                    It's important to know how to measure SMART goals. 
+                </p>
+                <i class='bx bx-help-circle turn-btn font-yellow' id="card-btn-2"></i>
+
+                <!-- SMART - back of the card -->
+                <div class="arrow-container arrow-back yellow-border bg-yellow-card" id="back-card-2">
+                    <h5 class="h5-heading back-card">measurable</h5>
+                    <p class="smart-text">
+                        It's important to know how to measure SMART goals. Goal tracking is a vital part of the goal-setting process 
+                    </p>
+                    <ul class="list-of-examples">
+                        <li class="list-item"><span class="bold-text">What </span>metrics will I use to track this goal?  </li>
+                        <li class="list-item"><span class="bold-text">Who </span>is involved in this goal?</li>
+                        <li class="list-item"><span class="bold-text">Are </span>there multiple ways to measure success for this goal?</li>
+                        <li class="list-item"><span class="bold-text">What </span>quantifiable change to the business am I hoping to achieve by accomplishing my goals?</li>
+                        <li class="list-item"><span class="bold-text">How </span>will I know when I have reached my goal?
+                        </li>
+                    </ul>
+                    <div class="close-btn" id="close-btn-2">X</div>
+                </div>
+            </div>
+
+             <!-- A -->
+             <div class="arrow-container green-border" id="card-3">
+                <div class="arrow arrow-green">A</div>
+                <i class='bx bxs-like'></i>
+                <h5 class="h5-heading">Achievable</h5>
+                <p class="smart-text">
+                    Ensure the GOAL is realistic but still challenging
+                </p>
+                <i class='bx bx-help-circle turn-btn font-green' id="card-btn-3"></i>
+
+                <!-- SMART - back of the card -->
+                <div class="arrow-container arrow-back green-border bg-green-card" id="back-card-3">
+                    <h5 class="h5-heading back-card">Achievable</h5>
+                    <p class="smart-text">
+                        Ensure that the goal is realistic and attainable within the resources and constrains you have. This step ensures that the goal is challenging but possible to achieve: 
+                    </p>
+                    <ul class="list-of-examples">
+                        <li class="list-item"><span class="bold-text">Do </span>I have the necessary resources, skills, and time to achieve this? </li>
+                        <li class="list-item"><span class="bold-text">Are </span>the any barriers that need to be addressed?</li>
+                    </ul>
+                    <div class="close-btn" id="close-btn-3">X</div>
+                </div>
+            </div>
+
+             <!-- R -->
+             <div class="arrow-container blue-border" id="card-4">
+                <div class="arrow arrow-blue">R</div>
+                <i class='bx bx-line-chart'></i>
+                <h5 class="h5-heading">Relevant</h5>
+                <p class="smart-text">
+                    Align the goal with your broader objectives
+                </p>
+                <i class='bx bx-help-circle turn-btn font-blue' id="card-btn-4"></i>
+
+                <!-- SMART - back of the card -->
+                <div class="arrow-container arrow-back blue-border bg-blue-card" id="back-card-4">
+                    <h5 class="h5-heading back-card">Relevant</h5>
+                    <p class="smart-text">
+                        Align the goal with your broader objectives. If your goal isn't directly connected to the work you're doing, it's probably not a good goal 
+                    </p>
+                    <ul class="list-of-examples">
+                        <li class="list-item"><span class="bold-text">Is </span>this goal aligned with my personal or organizational objectives? </li>
+                        <li class="list-item"><span class="bold-text">Does </span>it contribute to company vision and long-term targets?</li>
+                        <li class="list-item"><span class="bold-text">Will </span>accomplishing this goal move my business forward?</li>
+                    </ul>
+                    <div class="close-btn" id="close-btn-4">X</div>
+                </div>
+            </div>
+
+             <!-- T -->
+             <div class="arrow-container purple-border" id="card-5">
+                <div class="arrow arrow-purple">T</div>
+                <i class='bx bx-history'></i>
+                <h5 class="h5-heading">Time-bound</h5>
+                <p class="smart-text">
+                    Set a specific deadline or timeframe to complete the goal
+                </p>
+                <i class='bx bx-help-circle turn-btn font-purple' id="card-btn-5"></i>
+
+                <!-- SMART - back of the card -->
+                <div class="arrow-container arrow-back purple-border bg-purple-card" id="back-card-5">
+                    <h5 class="h5-heading back-card">Time-bound</h5>
+                    <p class="smart-text">
+                        Set a specific deadline or timeframe to complete the goal. Having a deadline creates urgency and motivates action 
+                    </p>
+                    <ul class="list-of-examples">
+                        <li class="list-item"><span class="bold-text">When </span>will this goal be achieved? </li>
+                        <li class="list-item"><span class="bold-text">What </span>target dates should I meet to complete the goal?</li>
+                        <li class="list-item"><span class="bold-text">What </span>are the key milestones along the way?</li>
+                    </ul>
+                    <div class="close-btn" id="close-btn-5">X</div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End of SMART section -->
+
+        <section class="audit-details">
+            <div class="audit-number">
+                <p class="audit-text simple-text-lg">Audit:</p>
+                <p class="audit-store-number">BK#123456</p>   
+            </div>
+            <div class="audit-info">
+                <p class="audit-info-text simple-text-lg">Audit info:</p>
+                <p class="audit-date simple-text-sm">Audit date: <span class="date-of-audit">Oct 12 2024, 16:34</span></p>
+                <p class="released-date simple-text-sm">Audit released: <span class="date-of-audit">Oct 12 2024, 18:36</span></p>
+                <p class="audit-id"><a href="#" class="rev-link">REV report</a> (ID: 123456)</p>
+            </div>
+            <div class="actions-boxes">
+                <p class="corrective-actions simple-text-lg">(15) Corrective Actions:</p>
+               <div class="action-boxes-container font-white">
+                    <div class="action-box box-submit bg-green">
+                        <h5 class="procents">(0) 0%</h5>
+                        <i class='bx bx-history bx-info'></i>
+                        <span class="submitted-test simple-text-sm">Not Submitted</span>
+                    </div>
+                    <div class="action-box box-review bg-orange ">
+                        <h5 class="procents font-dark">(6) 40%</h5>
+                        <i class='bx bxs-message-alt-edit bx-info'></i>
+                        <span class="submitted-test simple-text-sm ">In review</span>
+                    </div>
+                        
+                    <div class="action-box box-approved bg-orange box-disabled ">
+                        <h5 class="procents font-dark">(2) 13%</h5>
+                        <i class='bx bx-check bx-info'></i>
+                        <span class="submitted-test simple-text-sm">Approved</span>
+                    </div>
+                    <div class="action-box box-not-approved bg-red box-disabled ">
+                        <h5 class="procents">(7) 47%</h5>
+                        <i class='bx bxs-error bx-info'></i>
+                        <span class="submitted-test simple-text-sm">Not approved</span>
+                    </div>
+                </div>
+        </section>
+
+       
+
+        <!-- Tabs section -->
+        <section class="tab-container">
+            <div class="tab-button active" id="tab-btn-1">
+                <h5 class="h5-heading opportunity-title opportunity-title-fsc">FSC</h5>
+                <p class="actions-required">Opportunities (3)</p>
+                <p class="opportunity-text">Complete within 48 hours</p>
+                <figure class="opportnity-img-container">
+                    <img src="/img/fs-trans.png" alt="" class="opportunity-img">
+                </figure>
+            </div>
+            <div class="tab-button" id="tab-btn-2">
+                <h5 class="h5-heading opportunity-title opportunity-title-brand">Brand</h5>
+                <p class="actions-required">Opportunities (12)</p>
+                <p class="opportunity-text">Complete within 7 days</p>
+                <figure class="opportnity-img-container">
+                    <img src="img/bs-trans.png" alt="" class="opportunity-img">
+                </figure>
+            </div>
+        </section>
+        
+        <!-- This is a Food Safety tab -->
+        <section id="tab1" class="tab-content tab-content-fsc active">
+            <h2 class="h2-heading tab-heading fsc-heading">FSC - opportunities (3)</h2>
+            <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FS41 - Holding practices are implemented appropriately</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 2 - Cold PHFs meet the requisite minimum temperature guidelines</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">22 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-in-review" id="fs-status-1">In review</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fs41-3.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fs41-5.jpg" alt="">
+                        </figure>
+                        <!-- <figure class="single-img">
+                            <img src="img/fs41-4.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fs41-5.jpg" alt="">
+                        </figure> -->
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-in-review" id="fs-status-bar-1"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause"></textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions"></textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions"></textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL"></textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="fs-save-btn-1"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled></textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve" id="fs-approve-btn-1">Approve Action</button>
+                            <button class="cta-btn asl-btn-review" id="fs-sendback-btn-1">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="fs-msg-1">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->   
+            </div>  <!--End of Single action container -->
+
+            <hr class="style-hr">
+
+            <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FS42 - Expired PHU Products are Discarded</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 1 - Expired PHU products are discarded</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">20 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-approved" id="fs-status-2">Approved</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fs42-3.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fs42-4.jpg" alt="">
+                        </figure>
+                        <!-- <figure class="single-img">
+                            <img src="img/fs41-4.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fs41-5.jpg" alt="">
+                        </figure> -->
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-approved" id="fs-status-bar-2"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause">Daily sales correction are not made to the sales forecast
+                        </textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions">The expired products were immediately disposed of. The team member who was working in the kitchen was re-trained on the correct procedures for expired food in PHU. The shift manager was re-train how to adjust sales forecast to adjust the PLS projections. 
+                            </textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner" value="Immediate action was completed and documented by the shift manager on the REV shift.">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date" value="2024-10-12">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions">Implement a forecasting adjustment process for all the management team to be better in predicting daily food production and improving PLS accuracy. We will use historical sales data and external factors (weather, events) to improve forecasting accuracy. By reducing overproduction, it will help to improve customer satisfaction (fresh food) and will help to reduce waste cost. Improved forecasting procedures will be implemented within next 3 weeks.
+
+                            </textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL">Get to the 95% forecast accuracy over peak hours period and 90% accuracy for off-peak hours. 
+                                </textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" value="The store manager for the implementation, all managers for execution">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" value="2024-11-03">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="fs-save-btn-2"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled>Good detailed immediate action and clear corrective action to elemeinate the root cause of the issue. Action approved. </textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve" id="fs-approve-btn-2">Approve Action</button>
+                            <button class="cta-btn asl-btn-review" id="fs-sendback-btn-2">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="fs-msg-2">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->   
+            </div>  <!--End of Single action container -->
+
+            <hr class="style-hr">
+
+            <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FS51 - Equipment protected from contamination</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 1 - Sanitizing solution strength meets minimum strength requirement</li>
+                            <li class="opp-list-item"> 4 - Approved clean cloths are submerged in sanitizing solution.</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">22 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-unapproved" id="fs-status-3">Unapproved</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fs51-1.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fs51-2.jpg" alt="">
+                        </figure>
+                     <!--    <figure class="single-img">
+                            <img src="img/fs41-5.jpg" alt="">
+                        </figure> -->
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-unapproved" id="fs-status-bar-3"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause">Unknown</textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions">Replaced the weak sanitiser</textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner" value="Shift manager">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date" value="2024-10-12">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions">Team will be retrained on correct procedures</textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL">Not to lost point in REV</textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" value="shift manager">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" value="2024-10-20">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="fs-save-btn-3"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled>1. Please ensure that the store is aware of the roo cause of this opportunity 2. Please use SMART principles to create the corrective action plan with clear end goal and deadlines.  3. Immediate action and the corrective action for FS51 - 4 needs to be included too. This action has is not approved and was send back to review it again.
+                            </textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve" id="fs-approve-btn-3">Approve Action</button>
+                            <button class="cta-btn asl-btn-review" id="fs-sendback-btn-3">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="fs-msg-3">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->   
+            </div>  <!--End of Single action container -->
+            
+        </section> <!--End of Food Safety tab -->
+        
+        <!--BRANDS STANDARD tab -->
+        <section id="tab2" class="tab-content tab-content-brand">
+            <h2 class="h2-heading tab-heading brand-heading">Brand Standards- opportunities (12)</h2>
+            <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FQ11 - Ordered products are prepared correctly</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 1 - Sandwiches are build correctly</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">20 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-in-review" id="bs-status-1">In review</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fq11-1.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fq11-3.jpg" alt="">
+                        </figure>
+                         <figure class="single-img">
+                            <img src="img/fq11-6.jpg" alt="">
+                        </figure>
+                     <!--   <figure class="single-img">
+                            <img src="img/fs41-5.jpg" alt="">
+                        </figure> -->
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-in-review" id="bs-status-bar-1"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause"></textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions"></textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions"></textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL"></textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="bs-save-btn-1"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled></textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-1">Approve Action</button>
+                            <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-1">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="bs-msg-1">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->   
+            </div>  <!--End of Single action container -->
+
+            <hr class="style-hr">
+
+            <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FQ31 - Buns are toasted properly</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 1 - Buns are toasted to order and not held for more than 30 seconds</li>
+                            <li class="opp-list-item"> 2 - Buns are toasted according to BK procedures and meet quality standards</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">20 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-in-review" id="bs-status-2">In Review</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fq31-1.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fq31-2.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fq31-3.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fq31-4.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-in-review" id="bs-status-bar-2"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause"></textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions"></textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions"></textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL"></textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="bs-save-btn-2"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled></textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-2">Approve Action</button>
+                            <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-2">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="bs-msg-2">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->   
+
+            <hr class="style-hr">
+
+             <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FQ61 - Produce meets holding and quality standards</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 2 - Produce meets minimum quality standards for color and condition</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">20 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-unapproved" id="bs-status-3">Unapproved</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fq61-1.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fq61-2.jpg" alt="">
+                        </figure>
+                        <!-- <figure class="single-img">
+                            <img src="img/fs41-4.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fs41-5.jpg" alt="">
+                        </figure> -->
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-unapproved" id="bs-status-bar-3"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause"></textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions"></textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions"></textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL"></textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="bs-save-btn-3"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled></textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-3">Approve Action</button>
+                            <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-3">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="bs-msg-3">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->  
+
+                <hr class="style-hr">
+
+                <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FQ62 - Product in the PHU meet quality standards</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 1 - Product in the PHU meet quality standards</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">20 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-in-review" id="bs-status-4">In review</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fq62-1.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fq62-2.jpg" alt="">
+                        </figure>
+                        <!-- <figure class="single-img">
+                            <img src="img/fs41-4.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fs41-5.jpg" alt="">
+                        </figure> -->
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-in-review" id="bs-status-bar-4"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause"></textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions"></textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions"></textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL"></textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="bs-save-btn-4"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled></textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-4">Approve Action</button>
+                            <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-4">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="bs-msg-4">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->  
+
+                <hr class="style-hr">
+
+                <!-- Single action container -->
+            <div class="single-question-container">
+                <!-- single opportunity details -->
+                <div class="opportunity-details">
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Question</h6>
+                        <p class="ops-section-text ops-section-text-question">FQ72 - Equipment and products are stored properly</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Opportunities</h6>
+                        <ul class="opp-list">
+                            <li class="opp-list-item"> 3 - Open bags of products are stored properly</li>
+                        </ul>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Auditor comments</h6>
+                            <p class="ops-section-text ops-auditor-comments"><i class='bx bx-message-rounded-edit'></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quibusdam. Fugiat possimus asperiores fugit nobis repellendus.</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-section">
+                        <h6 class="ops-box-heading">Due date</h6>
+                        <p class="ops-section-text ops-due-date">20 Oct 2024</p>
+                    </div>
+                    <div class="ops-section-box ops-section-box-status">
+                        <h6 class="ops-box-heading">Status</h6>
+                        <p class="ops-section-text ops-audit-status ops-audit-status-in-review" id="bs-status-5">In review</p>
+                    </div> <!-- end of single opportunity details -->
+                </div>
+
+                <!-- opportunity images -->
+                <div class="image-opportunity">
+                    <h4 class="h4-heading images-heading">Missed opportunity images</h4>
+                    <div class="image-opportunity-container">
+                        <figure class="single-img">
+                            <img src="img/fq72-1.jpg" alt="">
+                        </figure>
+                        <figure class="single-img">
+                            <img src="img/fq72-2.jpg" alt="">
+                        </figure>
+                         <figure class="single-img">
+                            <img src="img/fq72-3.jpg" alt="">
+                        </figure>
+                       <figure class="single-img">
+                            <img src="img/fq72-4.jpg" alt="">
+                        </figure>
+                    </div>
+                </div>  <!-- End of opportunity images -->
+                <!-- Single action -->
+                <div class="store-action-plan">
+                    <div class="status-bar status-bar-in-review" id="bs-status-bar-5"></div>
+                    <div class="root-cause-container">
+                        <label for="root-cause-textarea" class="action-input-label">Root cause of the opportunity</label>
+                        <textarea name="root-cause-textarea" id="" class="action-textarea root-cause-textarea rgm-view-setting" placeholder="Enter root cause"></textarea>
+                    </div>
+                    <!-- Content of the Action Plan Section -->
+                    <div class="store-action-plan-content">
+                        <!-- immediate action -->
+                        <div class="store-action-plan-box immediate-action">
+                            <h4 class="action-heading immediate-action-heading">Immediate Action</h4>
+                            <textarea name="" id="" class="action-textarea immediate-action-textarea rgm-view-setting" placeholder="Enter your immediate actions"></textarea>
+                            <div class="input-container">
+                                <label for="immediate-action-owner" class="action-input-label">Responsible person</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner" name="immediate-action-owner">
+                            </div>
+                            <div class="input-container">
+                                <label for="immediate-action-date" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting" name="immediate-action-date">
+                            </div>
+    
+                            <!-- container with corrected action images -->
+                            <div class="image-opportunity-container corrective-action-img-container">
+                                <i class='bx bxs-plus-square add-img' id="upload-file-btn"></i>
+                                <h4 class="h4-heading corrective-img-heading">Proof of compliance images</h4>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                <figure class="single-img">
+                                    <img src="img/image-placeholder.jpg" alt="">
+                                </figure>
+                                </div>
+                                <!-- End of container with corrected action images -->
+                        </div> <!-- End of immediate action -->
+                        <!-- preventive action -->
+                        <div class="store-action-plan-box preventive-action">
+                            <h4 class="action-heading corrective-action-heading"><span class="smart-correction">SMART</span> Corrective Action</h4>
+                            <textarea name="" id="" class="action-textarea corrective-action-textarea rgm-view-setting" placeholder="Enter your SMART corrective actions"></textarea>
+                            <div class="input-container">
+                                <label for="goal-textarea" class="action-input-label">My GOAL</label>
+                                <textarea name="goal-textarea" id="" class="action-textarea goal-action-textarea rgm-view-setting" placeholder="Enter Your GOAL"></textarea>
+                            </div>
+                            <div class="input-container">
+                                <label for="" class="action-input-label">Responsible party</label>
+                                <input type="text" class="input-field input-field--responsible rgm-view-setting" placeholder="Enter action owner">
+                            </div>
+                            <div class="input-container input-and-btn">
+                                <label for="" class="action-input-label">Deadline date:</label>
+                                <input type="date" class="input-field date-picker rgm-view-setting">
+                            </div>
+                            <div class="btn-container">
+                                <button class="cta-btn save-btn" id="bs-save-btn-5"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                            </div>
+                        </div> <!-- End of preventive action -->
+                    </div> <!-- End of Content of the Action Plan Section -->
+                    <!-- Above store leader container -->
+                    <div class="abl-action-container">
+                        <div class="asl-comment">
+                            <label for="asl-comment-box" class="action-input-label">ASL comments</label>
+                            <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled></textarea>
+                        </div>
+                        <div class="asl-btns-container" id="asl-btns-container">
+                            <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-5">Approve Action</button>
+                            <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-5">Send for Review</button>
+                        </div>
+                        <p class="status-change-msg msg-approved" id="bs-msg-5">This action has been approved</p>
+                    </div>  <!-- End of Above store leader container -->
+                </div> <!--End of Single action -->  
+
+            </div>  <!--End of Single action container -->
+        </section>
+       <!--End of BRANDS STANDARD tab -->
+    </main>
+
+    <!-- MODALS -->
+    <section class="modal upload-img-modal" id="upload-img-modal">
+        <div class="modal-body">
+            <i class='bx bx-x modal-close' id="modal-close-btn"></i>
+            <div class="modal-content">
+                <p class="modal-text">Drop file here</p>
+                <p class="modal-text">Or</p>
+                <button class="cta-btn upload-file-btn" type="button">Select File</button>
+            </div>
+        </div>
+    </section>
+    <!-- END OF MODALS -->
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
