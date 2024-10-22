@@ -134,7 +134,7 @@ document.querySelectorAll('.asl-btn-approve').forEach(btn => {
         approveButton(btnID,'fs-status', 'approved','fs-status-bar', 'ops-audit-status', 'status-bar')
 
         // display the message about the status change
-        displayMsg(btnID, 'fs-msg', 'This action has been approved *just a test text!', 600, 0.2, 'approved')
+        displayMsg(btnID, 'fs-msg', 'This action has been approved *just a test text!', 700, 0.2, 'approved')
     })
 })
 
@@ -149,7 +149,7 @@ document.querySelectorAll('.asl-btn-review').forEach(btn => {
         approveButton(btnID,'fs-status', 'unapproved','fs-status-bar', 'ops-audit-status', 'status-bar')
 
         // display the message about the status change
-        displayMsg(btnID, 'fs-msg', 'This action has been send for review * just a test text', 600, 0.2, 'unapproved')
+        displayMsg(btnID, 'fs-msg', 'This action has been send for review * just a test text', 700, 0.2, 'unapproved')
     })
 })
 
@@ -164,7 +164,7 @@ document.querySelectorAll('.bs-asl-btn-approve').forEach(btn => {
         approveButton(btnID,'bs-status', 'approved','bs-status-bar', 'ops-audit-status', 'status-bar')
 
         // display the message about the status change
-        displayMsg(btnID, 'bs-msg', 'This action has been approved *just a test text', 600, 0.2, 'approved')
+        displayMsg(btnID, 'bs-msg', 'This action has been approved *just a test text', 700, 0.2, 'approved')
 
     })
 })
@@ -180,7 +180,7 @@ document.querySelectorAll('.bs-asl-btn-review').forEach(btn => {
         approveButton(btnID,'bs-status', 'unapproved','bs-status-bar', 'ops-audit-status', 'status-bar')
 
         // display the message about the status change
-        displayMsg(btnID, 'bs-msg', 'This action has been send for review *just a test text, not sending', 600, 0.2, 'unapproved')
+        displayMsg(btnID, 'bs-msg', 'This action has been send for review *just a test text, not sending', 700, 0.2, 'unapproved')
     })
 })
 
@@ -193,7 +193,7 @@ document.querySelectorAll('.save-btn').forEach(btn=> {
     btnID = btnID.slice(12)
     console.log(`This is the type of the button: ${btnType}`)
 
-    displayMsg(btnID, `${btnType}-msg`,'Your actions has been saved successfully *just a test text, not really saving',600, 0.2, 'approved')
+    displayMsg(btnID, `${btnType}-msg`,'Your actions has been saved successfully *just a test text, not really saving',700, 0.2, 'approved')
     })
     
 })
