@@ -6,7 +6,74 @@ const tab2 = document.getElementById('tab-btn-2')
 const radioRGM = document.getElementById('rgm-btn')
 const radioASL = document.getElementById('asl-btn')
 
+// ************************************************************
+    // The example function from earlier
+    const actionHistory = (rgmName, aslName) => {
+        const today = new Date();
+        
+        // Function to format the date
+        const formatDate = (date) => {
+          const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat'];
+          const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  
+          const day = days[date.getDay()];
+          const month = months[date.getMonth()];
+          const dateNum = date.getDate();
+          
+          // Add suffix for day (e.g., 1st, 2nd, 3rd, 24th)
+          const suffix = (n) => {
+            if (n > 3 && n < 21) return 'th'; // special case for numbers between 11 and 20
+            switch (n % 10) {
+              case 1: return 'st';
+              case 2: return 'nd';
+              case 3: return 'rd';
+              default: return 'th';
+            }
+          };
 
+        //   Get hours, minutes and seconds
+        const hours = date.getHours().toString().padStart(2,'0');
+        const minutes = date.getMinutes().toString().padStart(2,'0');
+        const seconds = date.getSeconds().toString().padStart(2,'0');
+  
+          return `${day}, ${dateNum}${suffix(dateNum)} of ${month} ${date.getFullYear()} at ${hours}:${minutes}:${seconds}`;
+        };
+  
+        return {
+          rgmName: rgmName,
+          aslName: aslName,
+          saved: `Action saved by ${rgmName} on ${formatDate(today)}`,
+          approved: `Action approved by ${aslName} on ${formatDate(today)}`,
+          unapproved: `Action sent back for review by ${aslName} on ${formatDate(today)}`,
+        };
+      };
+  
+      // Function to add an <li> with a given text to the <ul>
+      const addListItem = (text,list,action) => {
+        const ul = document.getElementById(list);
+        // create li element
+        const li = document.createElement('li');
+        // create i element (for the given icon)
+        const icon = document.createElement('i');
+
+            if(action === 'saved') {
+                li.classList.add('action-history-item','rgm-entry-history')
+                icon.classList.add('bx','bxs-save','bx-action-history')
+            } else if(action === 'approved') {
+                li.classList.add( 'action-history-item','asl-entry-history-approved')
+                icon.classList.add('bx','bx-check-double','bx-action-history')
+            } else if(action === 'unapproved') {
+                li.classList.add('action-history-item','asl-entry-history-unapproved')
+                icon.classList.add('bx','bxs-error','bx-action-history')
+            }
+
+        li.appendChild(icon)
+        li.appendChild(document.createTextNode(text))
+        // li.innerText = text;
+        ul.appendChild(li);
+      };
+  
+// *************************************************************
 
 // function to add or remove class from the element given as function argument argument
 function addClass(el,myClass) {
@@ -124,14 +191,19 @@ radioASL.addEventListener('change',()=> {
 
 
 // Action to take when Approved button was clicked by ASL - FOOD SAFETY section
-document.querySelectorAll('.asl-btn-approve').forEach(btn => {
+document.querySelectorAll('.fs-asl-btn-approve').forEach(btn => {
     btn.addEventListener('click',() => {
         let btnID = btn.id
+        console.log(`This is the button you clicked: ${btnID}`)
+        let btnType = btnID.slice(0,2)
         btnID = btnID.slice(15)
-        console.log(`Button id number: ${btnID}`)
 
         // change the styling of the status box and status bar
         approveButton(btnID,'fs-status', 'approved','fs-status-bar', 'ops-audit-status', 'status-bar')
+
+        // these two lines will add the <li> to the action history list
+        const newActionHistory = actionHistory('John Smith', 'Jane Doe');
+        addListItem(newActionHistory.approved, `${btnType}-actions-history-list-${btnID}`,'approved');
 
         // display the message about the status change
         displayMsg(btnID, 'fs-msg', 'This action has been approved *just a test text!', 700, 0.2, 'approved')
@@ -139,14 +211,19 @@ document.querySelectorAll('.asl-btn-approve').forEach(btn => {
 })
 
 // Action to take when Send for review button was clicked by ASL - FOOD SAFETY section
-document.querySelectorAll('.asl-btn-review').forEach(btn => {
+document.querySelectorAll('.fs-asl-btn-review').forEach(btn => {
     btn.addEventListener('click',() => {
         let btnID = btn.id
+        console.log(`This is the button you clicked: ${btnID}`)
+        let btnType = btnID.slice(0,2)
         btnID = btnID.slice(16)
-        console.log(`Button id number: ${btnID}`)
 
         // change the styling of the status box and status bar
         approveButton(btnID,'fs-status', 'unapproved','fs-status-bar', 'ops-audit-status', 'status-bar')
+
+        // these two lines will add the <li> to the action history list
+        const newActionHistory = actionHistory('John Smith', 'Jane Doe');
+        addListItem(newActionHistory.unapproved, `${btnType}-actions-history-list-${btnID}`,'unapproved');
 
         // display the message about the status change
         displayMsg(btnID, 'fs-msg', 'This action has been send for review * just a test text', 700, 0.2, 'unapproved')
@@ -158,10 +235,16 @@ document.querySelectorAll('.asl-btn-review').forEach(btn => {
 document.querySelectorAll('.bs-asl-btn-approve').forEach(btn => {
     btn.addEventListener('click',() => {
         let btnID = btn.id
+        console.log(`This is the button you clicked: ${btnID}`)
+        let btnType = btnID.slice(0,2)
         btnID = btnID.slice(15)
-        console.log(`Button id number: ${btnID}`)
+        
         // change the styling of the status box and status bar
         approveButton(btnID,'bs-status', 'approved','bs-status-bar', 'ops-audit-status', 'status-bar')
+
+        // these two lines will add the <li> to the action history list
+        const newActionHistory = actionHistory('John Smith', 'Jane Doe');
+        addListItem(newActionHistory.approved, `${btnType}-actions-history-list-${btnID}`,'approved');
 
         // display the message about the status change
         displayMsg(btnID, 'bs-msg', 'This action has been approved *just a test text', 700, 0.2, 'approved')
@@ -173,11 +256,17 @@ document.querySelectorAll('.bs-asl-btn-approve').forEach(btn => {
 document.querySelectorAll('.bs-asl-btn-review').forEach(btn => {
     btn.addEventListener('click',() => {
         let btnID = btn.id
+        console.log(`This is the button you clicked: ${btnID}`)
+        let btnType = btnID.slice(0,2)
         btnID = btnID.slice(16)
-        console.log(`Button id number: ${btnID}`)
+       
 
         // display the message about the status change
         approveButton(btnID,'bs-status', 'unapproved','bs-status-bar', 'ops-audit-status', 'status-bar')
+
+        // these two lines will add the <li> to the action history list
+        const newActionHistory = actionHistory('John Smith', 'Jane Doe');
+        addListItem(newActionHistory.unapproved, `${btnType}-actions-history-list-${btnID}`,'unapproved');
 
         // display the message about the status change
         displayMsg(btnID, 'bs-msg', 'This action has been send for review *just a test text, not sending', 700, 0.2, 'unapproved')
@@ -189,18 +278,23 @@ document.querySelectorAll('.bs-asl-btn-review').forEach(btn => {
 document.querySelectorAll('.save-btn').forEach(btn=> {
     btn.addEventListener('click', ()=> {
         let btnID = btn.id
-    let btnType = btnID.slice(0,2)
-    btnID = btnID.slice(12)
-    console.log(`This is the type of the button: ${btnType}`)
+        let btnType = btnID.slice(0,2)
+        btnID = btnID.slice(12)
+        console.log(`This is the type of the button: ${btnType}`)
 
-    displayMsg(btnID, `${btnType}-msg`,'Your actions has been saved successfully *just a test text, not really saving',700, 0.2, 'approved')
+
+        // these two lines will add the <li> to the action history list
+        const newActionHistory = actionHistory('John Smith', 'Jane Doe');
+        addListItem(newActionHistory.saved, `${btnType}-actions-history-list-${btnID}`,'saved');
+
+        displayMsg(btnID, `${btnType}-msg`,'Your actions has been saved successfully *just a test text, not really saving',700, 0.2, 'approved')
     })
     
 })
 
 // function to add classes to changes the a status of given action after clicking the button
 function approveButton(btnID, htmlEl, htmlText, status, classToAdd_status,classToAdd_statusBar) {
-    // changing audit status to given test (approven, unnaproved or in review)
+    // changing audit status to given test (approved, unapproved or in review)
     const auditStatus = document.getElementById(`${htmlEl}-${btnID}`)
     auditStatus.innerText = htmlText
     // then changing the background colour to corresponding status (approved - green, unapproved - red, in review - orange)
@@ -235,7 +329,7 @@ function displayMsg(elID, el, msgText, delTime, opacityStep, status) {
             opacity -= opacityStep //reduce opacity by given step
             msgBox.style.opacity = opacity
         } else {
-            // When opacity reaches 0, hie the message box and clear the interval
+            // When opacity reaches 0, hide the message box and clear the interval
             msgBox.style.display = 'none'
             clearInterval(fadeOutInterval)
         }

@@ -1059,7 +1059,7 @@ body {
     margin-left: auto;
     width: 40%;
     position: absolute;
-    bottom: 15rem;
+    bottom: 1rem;
     right: 4rem;
 }
 
@@ -1117,7 +1117,7 @@ body {
 .asl-comment-box {
     min-width: 95%;
     max-width: 95%;
-    min-height: 7rem;
+    min-height: 12rem;
     border-radius: 1rem;
     font-family: "Roboto", sans-serif;
     padding: .5rem;
@@ -1135,10 +1135,10 @@ body {
 }
 
 .status-change-msg {
-    width: 35rem;
+    width: 45rem;
     padding: 0.6rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: -5rem;
     right: 4rem;
     font-size: 1.5rem;
     border-radius: .5rem;
@@ -1159,16 +1159,51 @@ body {
     border: 1px solid var(--s-pink);
 }
 
+.action-history-container {
+    position: relative;
+    width: 40%;
+    border-top: 1px solid var(--black);
+    margin-top: 2.5rem;
+}
+
 .actions-history-list {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
-    display: none;
+    padding-top: .8rem;
+}
+
+.action-history-heading {
+    position: absolute;
+    top: -1.6rem;
+    left: 5rem;
+    width: 17rem;
+    background-color: var(--light-bg);
+    z-index: 10;
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-shadow: 4px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .actions-history-list {
     font-size: 1.2rem;
+}
+
+.bx-action-history {
+    font-size: 1.3rem;
+    margin-right: .2rem;
+}
+
+.rgm-entry-history {
+    color: var(--blue-test);
+}
+
+.asl-entry-history-unapproved {
+    color: var(--red-color);
+}
+
+.asl-entry-history-approved {
+    color: var(--green-color);
 }
 
 /* END OPPORTUNITY IMAGES */

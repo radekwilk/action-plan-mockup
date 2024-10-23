@@ -324,9 +324,9 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting">
                             </div>
-                            <div class="btn-container">
+                            <!-- <div class="btn-container">
                                 <button class="cta-btn save-btn" id="fs-save-btn-1"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
+                            </div> -->
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -336,18 +336,35 @@
                             <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled></textarea>
                         </div>
                         <div class="asl-btns-container" id="asl-btns-container">
-                            <button class="cta-btn asl-btn-approve" id="fs-approve-btn-1">Approve Action</button>
-                            <button class="cta-btn asl-btn-review" id="fs-sendback-btn-1">Send for Review</button>
+                            <button class="cta-btn asl-btn-approve fs-asl-btn-approve" id="fs-approve-btn-1">Approve Action</button>
+                            <button class="cta-btn asl-btn-review fs-asl-btn-review" id="fs-sendback-btn-1">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="fs-msg-1">This action has been approved</p>
+                        <!-- <p class="status-change-msg msg-approved" id="fs-msg-1">This action has been approved</p> -->
                     </div>  <!-- End of Above store leader container -->
 
                     <!-- Action submission history -->
-                    <ul class="actions-history-list">
-                        <li class="action-history-item">
-                            Action saved by John Smith on Thu, 24<sup>th</sup> of Oct at 15:36</p>
-                        </li>
-                    </ul>
+                     <article class="action-history-container">
+                         <h5 class="h5-heading action-history-heading">Action history</h5>
+                         <ul class="actions-history-list" id="fs-actions-history-list-1">
+                            <li class="action-history-item rgm-entry-history">
+                                <i class='bx bxl-telegram bx-action-history'></i> Action saved by John Smith on Thu, 24<sup>th</sup> of Oct at 15:36</p>
+                            </li>
+                            <li class="action-history-item asl-entry-history-unapproved">
+                                <i class='bx bxs-error bx-action-history'></i> Action sent back for review by Jane Doe, 25<sup>th</sup> of Oct at 16:06</p>
+                            </li>
+                            <li class="action-history-item asl-entry-history asl-entry-history-approved ">
+                                <i class='bx bx-check-double bx-action-history'></i> Action approved by Jane Doe on Thu, 26<sup>th</sup> of Oct at 11:51</p>
+                            </li>
+                         </ul>
+                     </article>
+                     <!-- End of Action submission history -->
+                      <!-- SAVE ACTION button -->
+                    <div class="btn-container">
+                        <button class="cta-btn save-btn" id="fs-save-btn-1"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                    </div>
+                    <!-- End of SAVE ACTION button -->
+                     <!-- action message  -->
+                    <p class="status-change-msg msg-approved" id="fs-msg-1">This action has been approved</p>  <!-- end of action message  -->                                                                                                                   
                 </div> <!--End of Single action -->   
             </div>  <!--End of Single action container -->
 
@@ -458,9 +475,6 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting" value="2024-11-03">
                             </div>
-                            <div class="btn-container">
-                                <button class="cta-btn save-btn" id="fs-save-btn-2"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -470,11 +484,24 @@
                             <textarea name="asl-comment-box" id="asl-comment-box" class="asl-comment-box" disabled>Good detailed immediate action and clear corrective action to elemeinate the root cause of the issue. Action approved. </textarea>
                         </div>
                         <div class="asl-btns-container" id="asl-btns-container">
-                            <button class="cta-btn asl-btn-approve" id="fs-approve-btn-2">Approve Action</button>
-                            <button class="cta-btn asl-btn-review" id="fs-sendback-btn-2">Send for Review</button>
+                            <button class="cta-btn asl-btn-approve fs-asl-btn-approve" id="fs-approve-btn-2">Approve Action</button>
+                            <button class="cta-btn asl-btn-review fs-asl-btn-review" id="fs-sendback-btn-2">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="fs-msg-2">This action has been approved</p>
                     </div>  <!-- End of Above store leader container -->
+                    <!-- Action submission history -->
+                    <article class="action-history-container">
+                        <h5 class="h5-heading action-history-heading">Action history</h5>
+                        <ul class="actions-history-list" id="fs-actions-history-list-2">
+                        </ul>
+                    </article>
+                    <!-- End of Action submission history -->
+                     <!-- SAVE ACTION button -->
+                   <div class="btn-container">
+                       <button class="cta-btn save-btn" id="fs-save-btn-2"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                   </div>
+                   <!-- End of SAVE ACTION button -->
+                    <!-- action message  -->
+                   <p class="status-change-msg msg-approved" id="fs-msg-2">This action has been approved</p>  <!-- end of action message  -->       
                 </div> <!--End of Single action -->   
             </div>  <!--End of Single action container -->
 
@@ -578,9 +605,6 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting" value="2024-10-20">
                             </div>
-                            <div class="btn-container">
-                                <button class="cta-btn save-btn" id="fs-save-btn-3"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -591,11 +615,24 @@
                             </textarea>
                         </div>
                         <div class="asl-btns-container" id="asl-btns-container">
-                            <button class="cta-btn asl-btn-approve" id="fs-approve-btn-3">Approve Action</button>
-                            <button class="cta-btn asl-btn-review" id="fs-sendback-btn-3">Send for Review</button>
+                            <button class="cta-btn asl-btn-approve fs-asl-btn-approve" id="fs-approve-btn-3">Approve Action</button>
+                            <button class="cta-btn asl-btn-review fs-asl-btn-review" id="fs-sendback-btn-3">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="fs-msg-3">This action has been approved</p>
                     </div>  <!-- End of Above store leader container -->
+                    <!-- Action submission history -->
+                    <article class="action-history-container">
+                        <h5 class="h5-heading action-history-heading">Action history</h5>
+                        <ul class="actions-history-list" id="fs-actions-history-list-3">
+                        </ul>
+                    </article>
+                    <!-- End of Action submission history -->
+                     <!-- SAVE ACTION button -->
+                   <div class="btn-container">
+                       <button class="cta-btn save-btn" id="fs-save-btn-3"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                   </div>
+                   <!-- End of SAVE ACTION button -->
+                    <!-- action message  -->
+                   <p class="status-change-msg msg-approved" id="fs-msg-3">This action has been approved</p>  <!-- end of action message  -->       
                 </div> <!--End of Single action -->   
             </div>  <!--End of Single action container -->
             
@@ -704,9 +741,6 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting">
                             </div>
-                            <div class="btn-container">
-                                <button class="cta-btn save-btn" id="bs-save-btn-1"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -719,8 +753,21 @@
                             <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-1">Approve Action</button>
                             <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-1">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="bs-msg-1">This action has been approved</p>
                     </div>  <!-- End of Above store leader container -->
+                    <!-- Action submission history -->
+                    <article class="action-history-container">
+                        <h5 class="h5-heading action-history-heading">Action history</h5>
+                        <ul class="actions-history-list" id="bs-actions-history-list-1">
+                        </ul>
+                    </article>
+                    <!-- End of Action submission history -->
+                     <!-- SAVE ACTION button -->
+                   <div class="btn-container">
+                       <button class="cta-btn save-btn" id="bs-save-btn-1"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                   </div>
+                   <!-- End of SAVE ACTION button -->
+                    <!-- action message  -->
+                   <p class="status-change-msg msg-approved" id="bs-msg-1">This action has been approved</p>  <!-- end of action message  -->       
                 </div> <!--End of Single action -->   
             </div>  <!--End of Single action container -->
 
@@ -827,9 +874,6 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting">
                             </div>
-                            <div class="btn-container">
-                                <button class="cta-btn save-btn" id="bs-save-btn-2"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -842,8 +886,21 @@
                             <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-2">Approve Action</button>
                             <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-2">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="bs-msg-2">This action has been approved</p>
                     </div>  <!-- End of Above store leader container -->
+                    <!-- Action submission history -->
+                    <article class="action-history-container">
+                        <h5 class="h5-heading action-history-heading">Action history</h5>
+                        <ul class="actions-history-list" id="bs-actions-history-list-2">
+                        </ul>
+                    </article>
+                    <!-- End of Action submission history -->
+                     <!-- SAVE ACTION button -->
+                   <div class="btn-container">
+                       <button class="cta-btn save-btn" id="bs-save-btn-2"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                   </div>
+                   <!-- End of SAVE ACTION button -->
+                    <!-- action message  -->
+                   <p class="status-change-msg msg-approved" id="bs-msg-2">This action has been approved</p>  <!-- end of action message  -->       
                 </div> <!--End of Single action -->   
 
             <hr class="style-hr">
@@ -948,9 +1005,6 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting">
                             </div>
-                            <div class="btn-container">
-                                <button class="cta-btn save-btn" id="bs-save-btn-3"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -963,8 +1017,21 @@
                             <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-3">Approve Action</button>
                             <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-3">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="bs-msg-3">This action has been approved</p>
                     </div>  <!-- End of Above store leader container -->
+                    <!-- Action submission history -->
+                    <article class="action-history-container">
+                        <h5 class="h5-heading action-history-heading">Action history</h5>
+                        <ul class="actions-history-list" id="bs-actions-history-list-3">
+                        </ul>
+                    </article>
+                    <!-- End of Action submission history -->
+                     <!-- SAVE ACTION button -->
+                   <div class="btn-container">
+                       <button class="cta-btn save-btn" id="bs-save-btn-3"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                   </div>
+                   <!-- End of SAVE ACTION button -->
+                    <!-- action message  -->
+                   <p class="status-change-msg msg-approved" id="bs-msg-3">This action has been approved</p>  <!-- end of action message  -->       
                 </div> <!--End of Single action -->  
 
                 <hr class="style-hr">
@@ -1069,9 +1136,6 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting">
                             </div>
-                            <div class="btn-container">
-                                <button class="cta-btn save-btn" id="bs-save-btn-4"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -1084,8 +1148,21 @@
                             <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-4">Approve Action</button>
                             <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-4">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="bs-msg-4">This action has been approved</p>
                     </div>  <!-- End of Above store leader container -->
+                    <!-- Action submission history -->
+                    <article class="action-history-container">
+                        <h5 class="h5-heading action-history-heading">Action history</h5>
+                        <ul class="actions-history-list" id="bs-actions-history-list-4">
+                        </ul>
+                    </article>
+                    <!-- End of Action submission history -->
+                     <!-- SAVE ACTION button -->
+                   <div class="btn-container">
+                       <button class="cta-btn save-btn" id="bs-save-btn-4"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                   </div>
+                   <!-- End of SAVE ACTION button -->
+                    <!-- action message  -->
+                   <p class="status-change-msg msg-approved" id="bs-msg-4">This action has been approved</p>  <!-- end of action message  -->       
                 </div> <!--End of Single action -->  
 
                 <hr class="style-hr">
@@ -1190,9 +1267,6 @@
                                 <label for="" class="action-input-label">Deadline date:</label>
                                 <input type="date" class="input-field date-picker rgm-view-setting">
                             </div>
-                            <div class="btn-container">
-                                <button class="cta-btn save-btn" id="bs-save-btn-5"> Save Action <i class='bx bxs-save save-icon'></i></button>
-                            </div>
                         </div> <!-- End of preventive action -->
                     </div> <!-- End of Content of the Action Plan Section -->
                     <!-- Above store leader container -->
@@ -1205,8 +1279,21 @@
                             <button class="cta-btn asl-btn-approve bs-asl-btn-approve" id="bs-approve-btn-5">Approve Action</button>
                             <button class="cta-btn asl-btn-review bs-asl-btn-review" id="bs-sendback-btn-5">Send for Review</button>
                         </div>
-                        <p class="status-change-msg msg-approved" id="bs-msg-5">This action has been approved</p>
                     </div>  <!-- End of Above store leader container -->
+                    <!-- Action submission history -->
+                    <article class="action-history-container">
+                        <h5 class="h5-heading action-history-heading">Action history</h5>
+                        <ul class="actions-history-list" id="bs-actions-history-list-5">
+                        </ul>
+                    </article>
+                    <!-- End of Action submission history -->
+                     <!-- SAVE ACTION button -->
+                   <div class="btn-container">
+                       <button class="cta-btn save-btn" id="bs-save-btn-5"> Save Action <i class='bx bxs-save save-icon'></i></button>
+                   </div>
+                   <!-- End of SAVE ACTION button -->
+                    <!-- action message  -->
+                   <p class="status-change-msg msg-approved" id="bs-msg-5">This action has been approved</p>  <!-- end of action message  -->       
                 </div> <!--End of Single action -->  
 
             </div>  <!--End of Single action container -->
